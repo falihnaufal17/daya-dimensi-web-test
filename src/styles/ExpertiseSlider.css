@@ -1,0 +1,4 @@
+.bg-expertise-slider-inner {
+  background-image: url(../../public/icon/expertise-slider-circle-mask.svg);
+  @apply bg-cover bg-center bg-no-repeat;
+}
