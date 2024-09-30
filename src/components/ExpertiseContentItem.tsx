@@ -29,12 +29,6 @@ const ExpertiseContentItem = ({
           </span>
         </div>
       </div>
-      {/* <Image
-        src="/icon/expertise-circle-mask.svg"
-        alt="expertise circle mask"
-        width={379}
-        height={379}
-        className="absolute top-0 left-0 right-0 z-0" /> */}
     </div>
   )
 }
