@@ -5,14 +5,10 @@ import Footer from "@/components/Footer";
 import JoinUs from "@/components/JoinUs";
 import UpcomingActivities from "@/components/UpcomingActivities";
 
-export default function Home() {
+export default function About() {
   return (
     <main>
       <Banner />
-      <Expertise />
-      <ExpertiseSlider />
-      <UpcomingActivities />
-      <JoinUs />
       <Footer />
     </main>
   );
