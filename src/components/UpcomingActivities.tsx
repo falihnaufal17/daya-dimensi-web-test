@@ -4,7 +4,7 @@ import UpcomingActivityItem from "./UpcomingActivityItem";
 
 const UpcomingActivities = () => {
   return (
-    <section className="px-32 max-md:p-5">
+    <section className="px-32 max-md:p-5 mb-24">
       <div className="flex justify-between items-center mb-10">
         <h2 className={`${TStarProLight.className} text-4xl max-md:text-xl`}>Upcoming Activities</h2>
         <div className="flex items-center gap-x-2 btn-action" role="button">

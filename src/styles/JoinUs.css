@@ -1,0 +1,4 @@
+.bg-join-us {
+  background-image: url(../../public/join-daya-dimensi.png);
+  @apply bg-center bg-cover bg-no-repeat;
+}

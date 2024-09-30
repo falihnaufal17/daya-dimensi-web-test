@@ -1,6 +1,7 @@
 import Banner from "@/components/Banner";
 import Expertise from "@/components/Expertise";
 import ExpertiseSlider from "@/components/ExpertiseSlider";
+import JoinUs from "@/components/JoinUs";
 import UpcomingActivities from "@/components/UpcomingActivities";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
       <Expertise />
       <ExpertiseSlider />
       <UpcomingActivities />
+      <JoinUs />
     </main>
   );
 }
