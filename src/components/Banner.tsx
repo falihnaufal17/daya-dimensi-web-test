@@ -5,7 +5,7 @@ import { TStarProBold, TStarProRegular } from '@/styles/fonts';
 
 const Banner = () => {
   return (
-    <section className="bg-banner max-md:pb-6">
+    <section className="bg-banner max-md:pb pt-20">
       <div className="grid grid-cols-2 max-md:grid-cols-1 px-32 py-20 max-md:p-5">
         <div>
           <h1 className={`text-5xl mb-2 ${TStarProRegular.className}`}>Adopt Globally,<span className="block">Adapt Locally</span></h1>
