@@ -1,0 +1,12 @@
+.bg-expertise-inner {
+  background-image: url(../../public/icon/expertise-circle-mask.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all .6s ease-in-out;
+}
+
+.bg-expertise-inner:hover {
+  background-image: url(../../public/hover-expertise.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
