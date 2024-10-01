@@ -4,8 +4,8 @@ import Image from 'next/image';
 
 const AboutFurtherMore = () => {
   return (
-    <section className="bg-furthermore min-h-screen flex flex-col justify-end px-28 pb-16">
-      <div className="grid grid-cols-3 gap-x-8">
+    <section className="bg-furthermore min-h-screen flex flex-col justify-end px-28 pb-16 max-md:p-5 max-md:justify-center">
+      <div className="grid grid-cols-3 gap-8 max-md:grid-cols-1">
         <div className="border-b-2 border-white pb-5">
           <h2 className={`${TStarProRegular.className} text-4xl mb-1 text-white`}>Family</h2>
           <p className="text-base text-[#FFFFFFCC] mb-6">Introducing the DayaLima Family</p>

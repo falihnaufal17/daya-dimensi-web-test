@@ -1,4 +1,6 @@
 'use client'
+import capitalizeWord from '@/libs/capitalizeWord';
+import { TStarProRegular } from '@/styles/fonts';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -8,7 +10,7 @@ const Breadcrumb = () => {
 
   const breadcrumbs = pathnameToArray.map((segment, index) => {
     const href = '/' + pathnameToArray.slice(0, index + 1).join('/');
-    const formattedSegment = segment.replace(/-/g, ' ').toUpperCase();
+    const formattedSegment = capitalizeWord(segment.replace(/-/g, ' '));
 
     return (
       <span key={href}>
@@ -23,9 +25,8 @@ const Breadcrumb = () => {
   });
 
   return (
-    <nav aria-label="breadcrumb" className="flex space-x-2">
+    <nav aria-label="breadcrumb" className={`flex space-x-2 ${TStarProRegular.className}`}>
       <Link href="/" className="text-gray-400 hover:underline">Home</Link>
-      <span className="text-gray-400">/</span>
       {breadcrumbs}
     </nav>
   );

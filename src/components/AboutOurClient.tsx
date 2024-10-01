@@ -3,8 +3,8 @@ import Image from "next/image";
 
 const AboutOurClient = () => {
   return (
-    <section className="py-20 px-28 bg-[#2F2A2A]">
-      <h2 className={`${TStarProRegular.className} text-4xl mb-10 text-white`}>Our Clients</h2>
+    <section className="py-20 px-28 bg-[#2F2A2A] max-md:p-5">
+      <h2 className={`${TStarProRegular.className} text-4xl mb-10 text-white max-md:text-center`}>Our Clients</h2>
       <div className="grid grid-cols-6">
         <Image src={"/logo/astrainternational.png"} alt={"astra international"} width={173} height={173} />
         <Image src={"/logo/blibli.png"} alt={"blibli"} width={173} height={173} />

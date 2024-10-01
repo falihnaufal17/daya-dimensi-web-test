@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const AboutSummaryImage = () => {
   return (
-    <section className="flex pl-56 pr-28 gap-x-8 pb-28">
+    <section className="flex pl-56 pr-28 gap-x-8 pb-28 -mt-52 max-md:p-5 max-md:mt-0">
       <div>
         <Image src="/leader-of-a-new-planet.png" alt="leader of a new planet" width={481} height={481} className="mb-5" />
         <h3 className={`${TStarProRegular.className} text-4xl mb-1`}>Leaders of a New Planet</h3>
