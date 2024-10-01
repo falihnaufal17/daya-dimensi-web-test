@@ -1,0 +1,5 @@
+.bg-header-layout {
+  background-image: url(../../public/header-about.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}

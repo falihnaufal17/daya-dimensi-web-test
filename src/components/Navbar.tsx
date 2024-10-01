@@ -1,5 +1,5 @@
 "use client";
-import { TStarProRegular } from "@/styles/fonts";
+import { TStarProBold, TStarProRegular } from "@/styles/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -9,6 +9,7 @@ import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [navbarBackground, setNavbarBackground] = useState<string>('bg-transparent');
   const pathname = usePathname();
+  const isHome = pathname === '/';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,43 +34,43 @@ const Navbar = () => {
           <Image src="/desktop/logo/20211126 [DDI] Logo - Horizontal (White) 1.png" alt="logo" width={160} height={50} />
         </Link>
         <ul className="flex gap-x-10">
-          <li className={`${TStarProRegular.className} nav-item text-lg text-[#FFFFFFCC]`}>
-            <Link href="/" className={pathname === '/' ? 'active-link' : ''}>
+          <li className={`${TStarProRegular.className} nav-item text-lg ${!isHome ? 'text-[#000000CC]' : 'text-[#FFFFFFCC]'}`}>
+            <Link href="/" className={pathname === '/' ? `${!isHome ? `${TStarProBold.className} text-[#000000CC]` : 'text-white'} active-link` : ''}>
               Home
             </Link>
           </li>
-          <li className={`${TStarProRegular.className} nav-item text-lg text-[#FFFFFFCC]`}>
-            <Link href="/about" className={pathname === '/about' ? 'active-link' : ''}>
+          <li className={`${TStarProRegular.className} nav-item text-lg ${!isHome ? 'text-[#000000CC]' : 'text-[#FFFFFFCC]'}`}>
+            <Link href="/about" className={pathname === '/about' ? `${!isHome ? `${TStarProBold.className} text-[#000000CC]` : 'text-white'} active-link` : ''}>
               About
             </Link>
           </li>
-          <li className={`${TStarProRegular.className} nav-item text-lg text-[#FFFFFFCC]`}>
-            <Link href="/" className={pathname === '/expertise' ? 'active-link' : ''}>
+          <li className={`${TStarProRegular.className} nav-item text-lg ${!isHome ? 'text-[#000000CC]' : 'text-[#FFFFFFCC]'}`}>
+            <Link href="/" className={pathname === '/expertise' ? `${!isHome ? `${TStarProBold.className} text-[#000000CC]` : 'text-white'} active-link` : ''}>
               Expertise
             </Link>
           </li>
-          <li className={`${TStarProRegular.className} nav-item text-lg text-[#FFFFFFCC]`}>
-            <Link href="/" className={pathname === '/program' ? 'active-link' : ''}>
+          <li className={`${TStarProRegular.className} nav-item text-lg ${!isHome ? 'text-[#000000CC]' : 'text-[#FFFFFFCC]'}`}>
+            <Link href="/" className={pathname === '/program' ? `${!isHome ? `${TStarProBold.className} text-[#000000CC]` : 'text-white'} active-link` : ''}>
               Program
             </Link>
           </li>
-          <li className={`${TStarProRegular.className} nav-item text-lg text-[#FFFFFFCC]`}>
-            <Link href="/" className={pathname === '/odyssey' ? 'active-link' : ''}>
+          <li className={`${TStarProRegular.className} nav-item text-lg ${!isHome ? 'text-[#000000CC]' : 'text-[#FFFFFFCC]'}`}>
+            <Link href="/" className={pathname === '/odyssey' ? `${!isHome ? `${TStarProBold.className} text-[#000000CC]` : 'text-white'} active-link` : ''}>
               Odyssey
             </Link>
           </li>
-          <li className={`${TStarProRegular.className} nav-item text-lg text-[#FFFFFFCC]`}>
-            <Link href="/" className={pathname === '/news' ? 'active-link' : ''}>
+          <li className={`${TStarProRegular.className} nav-item text-lg ${!isHome ? 'text-[#000000CC]' : 'text-[#FFFFFFCC]'}`}>
+            <Link href="/" className={pathname === '/news' ? `${!isHome ? `${TStarProBold.className} text-[#000000CC]` : 'text-white'} active-link` : ''}>
               News
             </Link>
           </li>
-          <li className={`${TStarProRegular.className} nav-item text-lg text-[#FFFFFFCC]`}>
-            <Link href="/" className={pathname === '/contact' ? 'active-link' : ''}>
+          <li className={`${TStarProRegular.className} nav-item text-lg ${!isHome ? 'text-[#000000CC]' : 'text-[#FFFFFFCC]'}`}>
+            <Link href="/" className={pathname === '/contact' ? `${!isHome ? `${TStarProBold.className} text-[#000000CC]` : 'text-white'} active-link` : ''}>
               Contact
             </Link>
           </li>
-          <li className={`${TStarProRegular.className} nav-item text-lg text-[#FFFFFFCC]`}>
-            <Link href="/" className={pathname === '/career' ? 'active-link' : ''}>
+          <li className={`${TStarProRegular.className} nav-item text-lg ${!isHome ? 'text-[#000000CC]' : 'text-[#FFFFFFCC]'}`}>
+            <Link href="/" className={pathname === '/career' ? `${!isHome ? `${TStarProBold.className} text-[#000000CC]` : 'text-white'} active-link` : ''}>
               Career
             </Link>
           </li>

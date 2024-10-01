@@ -1,15 +1,20 @@
-import Banner from "@/components/Banner";
-import Expertise from "@/components/Expertise";
-import ExpertiseSlider from "@/components/ExpertiseSlider";
+import AboutCollaborateReason from "@/components/AboutCollaborateReason";
+import AboutFurtherMore from "@/components/AboutFurtherMore";
+import AboutOurClient from "@/components/AboutOurClient";
+import AboutSummary from "@/components/AboutSummary";
 import Footer from "@/components/Footer";
-import JoinUs from "@/components/JoinUs";
-import UpcomingActivities from "@/components/UpcomingActivities";
+import HeaderLayout from "@/components/HeaderLayout";
 
 export default function About() {
   return (
     <main>
-      <Banner />
+      <HeaderLayout />
+      <AboutSummary />
+      <AboutCollaborateReason />
+      <AboutOurClient />
+      <AboutFurtherMore />
       <Footer />
     </main>
   );
 }
+background: ;
